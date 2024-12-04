@@ -21,7 +21,7 @@ addBtn.addEventListener("click", () => {
 
   if (isNaN(num1) && isNaN(num2)) {
     displaydiv.textContent = "please input a valid number";
-  } else {
+  }else {
     result = num1 + num2;
     displaydiv.textContent = `Result: ${result}`;
   }
