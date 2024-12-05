@@ -21,9 +21,24 @@ addBtn.addEventListener("click", () => {
 
   if (isNaN(num1) && isNaN(num2)) {
     displaydiv.textContent = "please input a valid number";
-  }else {
+  } else {
     result = num1 + num2;
     displaydiv.textContent = `Result: ${result}`;
   }
+  reset();
+});
+
+// ADD A CLICK EVENT LISTENER ON THE SUBTRACT BUTTON
+subBtn.addEventListener("click", () => {
+  const num1 = parseFloat(inputOne.value);
+  const num2 = parseFloat(inputTwo.value);
+
+  if (isNaN(num1) || isNaN(num2)) {
+    displaydiv.textContent = "please input a valid number";
+  } else {
+    result = num1 - num2;
+    displaydiv.textContent = `Result: ${result}`;
+  }
+
   reset();
 });
